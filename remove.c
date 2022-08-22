@@ -23,7 +23,6 @@ ls _at_end(ds *current, ls this)
 /**
  *_at_beginning - removes the first element in the list
  *
- *@current: the pointer to the node at index
  *@this: a pointer to the entire list
  *Return: @this
  */
