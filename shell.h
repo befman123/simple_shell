@@ -32,6 +32,10 @@ char **_toarray_chardp(ls);
 void *_memcpy(void *, void *, size_t);
 char *_strdup(const char *);
 int _strlen_recursion(const char *);
+ls _arguments(char *, const char *);
+ls _prompt_accept(void);
+int _run(char *const, char *[]);
+int _string_compare(char *const, char *const);
 /**
  *struct list - is a data structure used to mimic list in c#
  *using linked list

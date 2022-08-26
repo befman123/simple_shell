@@ -5,7 +5,7 @@
  *@this: the list to convert
  *Return: char** of all elements in the list on success else null
  */
-char **_to_array_chardp(ls this)
+char **_toarray_chardp(ls this)
 {
 	char **ret;
 

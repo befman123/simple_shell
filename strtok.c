@@ -20,12 +20,21 @@ ls _arguments(char *string, const char *delim)
 		if (ret->length == 0)
 		{
 			str = strtok(string, delim);
-			ret->add(str, ret);
+			if (str)
+			{
+				if (*(str + (_strlen_recursion(str) - 1)) == 10)
+					*(str + (_strlen_recursion(str) - 1)) = 0;
+				ret->add(str, ret);
+			}
 		}
 		else
 		{
 			str = strtok(NULL, delim);
-			ret->add(str, ret);
+			if (str)
+			{
+				*(str + (_strlen_recursion(str) - 1)) = '\0';
+				ret->add(str, ret);
+			}
 		}
 	} while (str != NULL);
 	return (ret);
